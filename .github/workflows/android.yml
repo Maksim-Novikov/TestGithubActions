@@ -19,4 +19,4 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Run some unit tests
-        run: ./gradlew testStageDebugUnitTest
+        run: ./gradlew -Pci --console=plain :app:testDebug
